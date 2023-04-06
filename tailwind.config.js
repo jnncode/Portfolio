@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['inter', 'raleway'],
+        inter: ['inter', 'serif'],
       }
     },
   },
