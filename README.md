@@ -1,7 +1,7 @@
 # Portfolio
 Minimalistic JNNCODE website
 
-What I Learned
+# What I Learned
 - React
 - JSX: syntax extension creating dynamic and interactive UI 
 - Tailwind: leveraged utilitiy to efficiently style React components
