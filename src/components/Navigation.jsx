@@ -45,10 +45,9 @@ function Navigation() {
                 </pre>
             </Logo>
             <Links>
-                <li><a href='../Intro' onClick={() => navigateTo('../Intro')}>home.</a></li>
-                <li><a href='../Project' onClick={() => navigateTo('../Project')}>projects.</a></li>
-                <li><a href='../Contact' onClick={() => navigateTo('../Contact')}>contact.</a></li>
-                <li><a href='../About' onClick={() => navigateTo('../About')}>about.</a></li>
+                <li><a href='../Intro'>home.</a></li>
+                <li><a href='../Project'>projects.</a></li>
+                <li><a href='../Contact'>contact.</a></li>
             </Links>
         </NavigationContainer>
     )
