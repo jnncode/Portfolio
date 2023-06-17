@@ -1,27 +1,33 @@
-import React, { useState } from 'react';
-import { useSpring, animated } from 'react-spring';
+import React from 'react';
+import TimelineJS from '../data/TimelineJS';
+import TimelineItem from './TimelineItem';
 
 function Intro() {
-    const [isAnimating, setAnimating] = useState(true);
-
-    const animation = useSpring ({
-        from: { opacity: isAnimating ? 0 : 1 }, // initial state
-        to: { opacity: isAnimating ? 1 : 0 }, // final state
-        config: { duration: 1000 }, // animation duration in ms
-        onRest: () => {
-            // restarts the animation once completed
-            setAnimating(!isAnimating);
-        },
-    });
-
     return (
-        <animated.div style={animation}>
-            <div className='flex justify-center items-center h-screen'>
-                <p className='text-base md:text-xl mb-3 font-medium'>Software Engineer &amp;Content Creator</p>
+        <div className='flex flex-col justify-center items-center h-screen'>
+            <div className='text-center'>
+                <p className='text-base md:text-xl mb-3 font-md'>
+                    <span className="block text-4xl font-bold">J Nguyen</span>
+                    <span className="block text-base font-semibold">Software Engineer &amp; Content Creator</span>
+                </p>
             </div>
-        </animated.div>
-        
-    )
+            <div className='flex flex-col md:flex-row justify-center my-20'>
+                <div className='w-full md:w-7/12'>
+                    <h1 className='text-center text-lg md:text-lg mb-2 md:mb-3 font-semibold'>
+                        Timeline
+                    </h1>
+                    {TimelineJS.map((item) => (
+                        <TimelineItem
+                            key={item.year}
+                            year={item.year}
+                            title={item.title}
+                            description={item.description}
+                        />
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default Intro;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Intro from './components/Intro';
-import Project from './components/Project';
+import Projects from './components/Projects';
 // import Timeline from './components/Timeline';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -15,7 +15,7 @@ function App() {
       case 'home':
         return <Intro />;
       case 'projects':
-        return <Project />;
+        return <Projects />;
       case 'contact':
         return <Contact />;
       default:

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 
 const NavigationContainer = styled.nav`
@@ -31,8 +32,21 @@ const Links = styled.ul`
 `;
 
 function Navigation() {
+    const [isAnimating, setAnimating] = useState(true);
+
+    const animation = useSpring ({
+        from: { opacity: isAnimating ? 0 : 1 }, // initial state
+        to: { opacity: isAnimating ? 1 : 0 }, // final state
+        config: { duration: 1000 }, // animation duration in ms
+        onRest: () => {
+            // restarts the animation once completed
+            setAnimating(!isAnimating);
+        },
+    });
+
     return (
         <NavigationContainer>
+            <animated.div style={animation}>
             <Logo>
                 <pre>
                     {String.raw`          
@@ -44,9 +58,10 @@ function Navigation() {
                     `}       
                 </pre>
             </Logo>
+            </animated.div>
             <Links>
                 <li><a href='../Intro'>home.</a></li>
-                <li><a href='../Project'>projects.</a></li>
+                <li><a href='../Projects'>projects.</a></li>
                 <li><a href='../Contact'>contact.</a></li>
             </Links>
         </NavigationContainer>
