@@ -2,9 +2,13 @@ import React from 'react';
 
 function Contact() {
     return (
-        <div className='flex flex-col mb-10 mx-auto'>
-            <h1 className='text-center text-lg md:text-lg mb-2 md:mb-3 font-semibold'>Contact</h1>
-            <div className='flex justify-center items-center'>
+        <div className='justify-center items-center'>
+            <div className='flex flex-col md:flex-row justify-center my-20'>
+                <div className='w-full md:w-7/12'>
+                    <span className='block text-4xl font-bold'>Contact</span>
+                </div>
+            </div>
+            <div className='flex justify-center items-center'> 
                 <form 
                     action='https://getform.io/f/fab5aa08-5913-469b-a9c6-48e225c8b065' 
                     method='POST'

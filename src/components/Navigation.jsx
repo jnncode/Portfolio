@@ -60,9 +60,9 @@ function Navigation() {
             </Logo>
             </animated.div>
             <Links>
-                <li><a href='../Intro'>home.</a></li>
-                <li><a href='../Projects'>projects.</a></li>
-                <li><a href='../Contact'>contact.</a></li>
+                <li><a href='./Home'>home.</a></li>
+                <li><a href='./Projects'>projects.</a></li>
+                <li><a href='./Contact'>contact.</a></li>
             </Links>
         </NavigationContainer>
     )
