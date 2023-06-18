@@ -5,7 +5,7 @@ import TimelineItem from './TimelineItem';
 function Home() {
     return (
         <div className='justify-center items-center'>
-            <div className='flex flex-col md:flex-row justify-center my-20'>
+            <div className='flex md:flex-row justify-center mt-20'>
                 <div className='w-full md:w-7/12'>
                     <span className='block text-4xl font-bold'>J Nguyen</span>
                     <span className='block text-base font-bold'>Software Engineer &amp; Content Creator</span>
