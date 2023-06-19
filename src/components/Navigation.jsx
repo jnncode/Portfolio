@@ -61,7 +61,7 @@ function Navigation() {
             </animated.div>
             <Links>
                 <li><a href='./Home'>home.</a></li>
-                <li><a href='./Projects'>projects.</a></li>
+                <li><a href='./Project'>projects.</a></li>
                 <li><a href='./Contact'>contact.</a></li>
             </Links>
         </NavigationContainer>
