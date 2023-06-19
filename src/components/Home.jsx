@@ -6,7 +6,7 @@ function Home() {
     return (
         <div className='justify-center items-center'>
             <div className='flex md:flex-row justify-center mt-20'>
-                <div className='w-full md:w-7/12'>
+                <div className='md:w-7/12'>
                     <span className='block text-4xl font-bold'>J Nguyen</span>
                     <span className='block text-base font-bold'>Software Engineer &amp; Content Creator</span>
                     <h1 className='text-center text-lg md:text-lg mb-2 md:mb-3 font-semibold'>

@@ -4,8 +4,9 @@ function Contact() {
     return (
         <div className='justify-center items-center'>
             <div className='flex flex-col md:flex-row justify-center my-20'>
-                <div className='w-full md:w-7/12'>
+                <div className='md:w-7/12'>
                     <span className='block text-4xl font-bold'>Contact</span>
+                    <span className='block text-base font-bold'>Connect for business inquiries.</span>
                 </div>
             </div>
             <div className='flex justify-center items-center'> 
