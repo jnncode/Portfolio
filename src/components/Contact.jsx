@@ -6,7 +6,7 @@ function Contact() {
             <div className='flex flex-col md:flex-row justify-center my-20'>
                 <div className='md:w-7/12'>
                     <span className='block text-4xl font-bold'>Contact</span>
-                    <span className='block text-base font-bold'>Connect for business inquiries.</span>
+                    <span className='block text-base font-bold'>Business Inquiries</span>
                 </div>
             </div>
             <div className='flex justify-center items-center'> 
