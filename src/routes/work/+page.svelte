@@ -7,10 +7,10 @@
         { videoLink: "https://www.github.com/jnncode/Terminal", videoSource: `${assetsBasePath}videos/Terminal.mp4`},
     ];
     const photos = [
-        { photoLink: `${assetsBasePath}images/GameBoy.jpeg`, photoSource: `${assetsBasePath}images/GameBoy.jpeg` },
-        { photoLink: `${assetsBasePath}images/ChinaTown.jpeg`, photoSource: `${assetsBasePath}images/ChinaTown.jpeg` },
-        { photoLink: `${assetsBasePath}images/Tokyo.jpeg`, photoSource: `${assetsBasePath}images/Tokyo.jpeg` },
-        { photoLink: `${assetsBasePath}images/Astronaut.jpeg`, photoSource: `${assetsBasePath}images/Astronaut.jpeg` },
+        { photoLink: `https://vsco.co/jnncode/gallery`, photoSource: `${assetsBasePath}images/GameBoy.jpeg` },
+        { photoLink: `https://vsco.co/jnncode/gallery`, photoSource: `${assetsBasePath}images/ChinaTown.jpeg` },
+        { photoLink: `https://vsco.co/jnncode/gallery`, photoSource: `${assetsBasePath}images/Tokyo.jpeg` },
+        { photoLink: `https://vsco.co/jnncode/gallery`, photoSource: `${assetsBasePath}images/Astronaut.jpeg` },
     ];
     // TBD for prints.
 </script>
