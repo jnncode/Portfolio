@@ -4,7 +4,7 @@
 		{ videoLink: "https://www.github.com/jnncode/Fitts_Law", videoSource: `${assetsBasePath}videos/FittsLaw.mp4` },
         { videoLink: "https://www.github.com/jnncode/Run_Astro", videoSource: `${assetsBasePath}videos/RunAstro.mp4` },
 		{ videoLink: "https://www.github.com/jnncode/Spotify_Web_Player", videoSource: `${assetsBasePath}videos/Spotify.mp4` },
-        {},
+        { videoLink: "https://www.github.com/jnncode/Terminal", videoSource: `${assetsBasePath}videos/Terminal.mp4`},
     ];
     const photos = [
         { photoLink: `${assetsBasePath}images/GameBoy.jpeg`, photoSource: `${assetsBasePath}images/GameBoy.jpeg` },
@@ -25,7 +25,7 @@
         codes.
             {#each videos as {videoLink, videoSource}}
                 <a href={videoLink} target="_blank" rel="noopener noreferrer">
-                    <video class="videos" controls muted preload="auto">
+                    <video class="videos" autoplay muted loop>
                         <source src={videoSource} type="video/mp4">
                     </video>
                 </a>
