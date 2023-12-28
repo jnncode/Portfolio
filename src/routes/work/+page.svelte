@@ -25,7 +25,7 @@
         codes.
             {#each videos as {videoLink, videoSource}}
                 <a href={videoLink} target="_blank" rel="noopener noreferrer">
-                    <video class="videos" muted autoplay loop>
+                    <video class="videos" controls muted preload="auto">
                         <source src={videoSource} type="video/mp4">
                     </video>
                 </a>
@@ -60,5 +60,11 @@
         border-width: 0.15rem;
         width: 15rem;
         height: 15rem;
+        object-fit: cover;
+    }
+    @media (max-width: 768px) {
+        .grid {
+            grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+        }
     }
 </style>
