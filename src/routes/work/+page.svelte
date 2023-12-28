@@ -7,10 +7,10 @@
         { videoLink: "https://www.github.com/jnncode/Terminal", videoSource: `${assetsBasePath}videos/Terminal.mp4`},
     ];
     const photos = [
-        { photoLink: `https://vsco.co/jnncode/gallery`, photoSource: `${assetsBasePath}images/GameBoy.jpeg` },
-        { photoLink: `https://vsco.co/jnncode/gallery`, photoSource: `${assetsBasePath}images/ChinaTown.jpeg` },
-        { photoLink: `https://vsco.co/jnncode/gallery`, photoSource: `${assetsBasePath}images/Tokyo.jpeg` },
-        { photoLink: `https://vsco.co/jnncode/gallery`, photoSource: `${assetsBasePath}images/Astronaut.jpeg` },
+        { photoLink: `https://vsco.co/jnncode/media/65612a2cb3e2174e1ada2871`, photoSource: `${assetsBasePath}images/GameBoy.jpeg` },
+        { photoLink: `https://vsco.co/jnncode/media/658d003ede26f90b3ed77142`, photoSource: `${assetsBasePath}images/ChinaTown.jpeg` },
+        { photoLink: `https://vsco.co/jnncode/media/658d0032de26f90b3ed77141`, photoSource: `${assetsBasePath}images/Tokyo.jpeg` },
+        { photoLink: `https://vsco.co/jnncode/media/658cfff8de26f90b3ed77140`, photoSource: `${assetsBasePath}images/Astronaut.jpeg` },
     ];
     // TBD for prints.
 </script>
@@ -25,7 +25,7 @@
         codes.
             {#each videos as {videoLink, videoSource}}
                 <a href={videoLink} target="_blank" rel="noopener noreferrer">
-                    <video class="videos" autoplay muted loop>
+                    <video class="videos" autoplay muted loop playsinline>
                         <source src={videoSource} type="video/mp4">
                     </video>
                 </a>
@@ -60,7 +60,6 @@
         border-width: 0.15rem;
         width: 15rem;
         height: 15rem;
-        object-fit: cover;
     }
     @media (max-width: 768px) {
         .grid {
