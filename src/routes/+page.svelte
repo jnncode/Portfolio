@@ -3,12 +3,11 @@
 </script>
 
 <svelte:head>
-	<title>home.</title>
+	<title>Home</title>
 	<meta name="description" content="JNNCODE" />
 </svelte:head>
 
 <div class="container">
-    <a href="{assetsBasePath}documents/JNguyen_Resume.pdf" class="pdf" target="_blank" rel="noopener noreferrer">J's Full Resume</a>
     <ul class="timeline-list">
         <li class="timeline-item">
             <h4 class="timeline-period">September 2023 - December 2023</h4>
@@ -45,22 +44,10 @@
 </div>
 
 <style>
-    .pdf {
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: 700;
-    }
-    .pdf:hover {
-        text-decoration: underline;
-    }
-    .pdf:visited {
-        color: #ffffff;
-    }
     .timeline-list {
         display: flex;
         position: relative;
         flex-direction: column;
-        border-left: 0.1rem solid #ffffff;
         list-style-type: none;
     }
     .timeline-item {
