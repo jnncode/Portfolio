@@ -1,7 +1,3 @@
-<script>
-    import { assetsBasePath } from "../lib/path";
-</script>
-
 <svelte:head>
 	<title>Home</title>
 	<meta name="description" content="JNNCODE" />
