@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "Nerd", "Menlo", "Monaco", "Liberation Mono", "DejaVu Sans Mono";
-	src: url("../src/assets/fonts/3270/3270NerdFont-Regular.ttf") format("truetype");
+	src: url("../../static/assets/fonts/3270/3270NerdFontMono-Regular.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
