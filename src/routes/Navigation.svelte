@@ -8,13 +8,13 @@
         <div class="nav-links">
             <h3 class="signature">JNNCODE</h3>
 			<li aria-current={$page.url.pathname === "/" ? "page" : undefined}>
-				<a href="{base}/">/Home</a>
+				<a href="{base}/">Home</a>
 			</li>
 			<li aria-current={$page.url.pathname === "/about" ? "page" : undefined}>
-				<a href="{base}/work">/Work</a>
+				<a href="{base}/work">Work</a>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith("/sverdle") ? "page" : undefined}>
-				<a href="{base}/about">/About</a>
+				<a href="{base}/about">About</a>
 			</li>
 		</div>
         <div class="socials">
@@ -88,7 +88,7 @@
         font-weight: 900;
     }
     .nav-links a:hover {
-        color: #d63030
+        color: #b7b7b7;
     }
     .nav-links a:focus {
         outline: none;
