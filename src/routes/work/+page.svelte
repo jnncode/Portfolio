@@ -3,7 +3,7 @@
 
     const slides = [
         { id: 1, image: `${assetsBasePath}images/Spotify.png`, title: 'Mocked Spotify Web Player', caption: 'Scraped API and integrated OAuth regeneration.'},
-        { id: 2, image: `${assetsBasePath}images/FittsLaw.png`, title: `Fitts' Law`, caption: 'Simulated time construction following heuristic evaluation practices.'},
+        { id: 2, image: `${assetsBasePath}images/FittsLaw.png`, title: `Fitts' Law`, caption: 'Simulated time construction with heuristic evaluation practices.'},
     ]
     let index = 0;
 
@@ -86,10 +86,9 @@
     .title {
         bottom: 20%;
         font-weight: 900;
-        white-space: nowrap;
     }
     .caption {
-        bottom: 10%;
+        bottom: 0%;
         font-weight: 400;
     }
     button {
@@ -135,6 +134,11 @@
     @media (max-width: 768px) {
         .grid {
             grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+        }
+        .title, .caption {
+            width: 80%;
+            padding: 0 10%;
+            text-align: center;
         }
     }
 </style>
