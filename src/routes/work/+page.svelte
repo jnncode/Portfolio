@@ -2,11 +2,10 @@
     import { assetsBasePath } from "$lib/path.js";
 
     const slides = [
-        { id: 1, image: `${assetsBasePath}images/Spotify.png`, title: 'Mocked Spotify Web Player', caption: 'Scraped API and integrated OAuth regeneration.'},
-        { id: 2, image: `${assetsBasePath}images/FittsLaw.png`, title: `Fitts' Law`, caption: 'Simulated time construction with heuristic evaluation practices.'},
-    ]
+        { id: 1, link: 'https://www.github.com/jnncode/Spotify_Web_Player', image: `${assetsBasePath}images/Spotify.png`, title: 'Mocked Spotify Web Player', caption: 'Scraped API and integrated OAuth regeneration.' },
+        { id: 2, link: 'https://www.github.com/jnncode/Fitts_Law', image: `${assetsBasePath}images/FittsLaw.png`, title: `Fitts' Law`, caption: 'Simulated time construction with heuristic evaluation practices.' },
+    ];
     let index = 0;
-
     function next() {
         index = (index + 1) % slides.length;
     }
@@ -30,7 +29,7 @@
 <div class="container">
     <h4>Codes</h4>
     <div class="slideshow">
-        <img class="slide" src={slides[index].image} alt={[index]} />
+        <a href={slides[index].link} target="_blank" rel="noopener noreferrer"><img class="slide" src={slides[index].image} alt={[index]} /></a>
         <div class="title">{slides[index].title}</div>
         <div class="caption">{slides[index].caption}</div>
         <button id="prev" on:click={previous}>&#10094;</button>
@@ -84,11 +83,11 @@
         background-color: #9e9e9e;
     }
     .title {
-        bottom: 20%;
+        bottom: 25%;
         font-weight: 900;
     }
     .caption {
-        bottom: 0%;
+        bottom: 10%;
         font-weight: 400;
     }
     button {
