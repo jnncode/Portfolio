@@ -4,7 +4,6 @@
     const slides = [
         { id: 1, image: `${assetsBasePath}images/Spotify.png`, title: 'Mocked Spotify Web Player', caption: 'Scraped API and integrated OAuth regeneration.'},
         { id: 2, image: `${assetsBasePath}images/FittsLaw.png`, title: `Fitts' Law`, caption: 'Simulated time construction following heuristic evaluation practices.'},
-        { id: 3, image: `${assetsBasePath}images/RunAstro.png`, title: 'Run Astro', caption: 'Designed adventure of low-poly astronaut world unlocking hidden super powers.'},
     ]
     let index = 0;
 
@@ -76,7 +75,7 @@
         max-height: 100%;
         width: 45rem;
         height: 25rem;
-        object-fit: cover;
+        object-fit: contain;
     }
     .title, .caption {
         position: absolute;
