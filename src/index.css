@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('./fonts/JetBrainsMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-family: 'JetBrainsMono', Arial, Inter, system-ui, Avenir, Helvetica;
+
+  color: #ffffff;
+  background-color: #1c1c1c;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 20px;
+}
+
+.navbar-left, .navbar-right{
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.nav-links li {
+  margin-right: 1rem;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+
+a:hover {
+  color: #227aa9
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #1c1c1c;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #51c5f7;
+  }
+  button {
+    background-color: #cfcfcf;
+  }
+}
