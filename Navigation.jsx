@@ -1,4 +1,5 @@
 import logo from './src/logo.png'
+import { Link } from 'react-router-dom'
 
 function Navigation() {
 
@@ -6,16 +7,15 @@ function Navigation() {
     <>
         <nav className="navbar">
             <div className="navbar-left">
-                <a href="/">
+                <Link to="/">
                     <img className="logo" src={logo} alt="Logo" width={75} height={75} />
-                </a>
+                </Link>
             </div>
             <div className="navbar-right">
                 <ul className="nav-links">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">Code</a></li>
-                    <li><a href="/">Film</a></li>
-                    <li><a href="/">About</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/Code">Code</Link></li>
+                    <li><Link to="/About">About</Link></li>
                 </ul>
             </div>
         </nav>

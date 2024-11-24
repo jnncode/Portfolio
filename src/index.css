@@ -3,6 +3,7 @@
   src: url('./fonts/JetBrainsMono-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-size: medium;
 }
 
 :root {
@@ -59,7 +60,7 @@ body {
 }
 
 a:hover {
-  color: #227aa9
+  color: #51c5f7
 }
 
 @media (prefers-color-scheme: light) {
