@@ -2,9 +2,9 @@
 www.jnncode.com
 
 ### Learning Outcome
+- <a target="_blank" href="https://vite.dev/guide">Vite Guide</a>
 
 ### Stack
 React, HTML, CSS, JavaScript
 
-Guide: https://vite.dev/guide/
-Reference: Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com">Icons8 Reference</a>
