@@ -1,8 +1,8 @@
-import './src/App.css'
+import '../App.css'
 
 function About() {
   const images = {
-    image1: new URL('src/assets/Profile.jpg', import.meta.url).href
+    image1: new URL('/src/assets/Profile.jpg', import.meta.url).href
   }
   return (
     <>

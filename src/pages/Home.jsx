@@ -1,4 +1,4 @@
-import './src/App.css'
+import '../App.css'
 import { useState, useEffect } from 'react'
 
 const Typewriter = ({ text, delay, infinite }) => {

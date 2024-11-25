@@ -7,13 +7,13 @@ function Navigation() {
     <>
         <nav className="navbar">
             <div className="navbar-left">
-                <Link to="/">
+                <Link to="/Home">
                     <img className="logo" src={logo} alt="Logo" width={75} height={75} />
                 </Link>
             </div>
             <div className="navbar-right">
                 <ul className="nav-links">
-                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/Home">Home</Link></li>
                     <li><Link to="/Code">Code</Link></li>
                     <li><Link to="/About">About</Link></li>
                 </ul>
