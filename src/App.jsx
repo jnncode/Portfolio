@@ -1,9 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Navigation from './Navigation'
-import Home from './Home'
-import Code from './Code'
-import About from './About'
+import Navigation from '../Navigation'
+import Home from './pages/Home'
+import Code from './pages/Code'
+import About from './pages/About'
 
 function App() {
   return (
