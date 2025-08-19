@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 import '../App.css';
 
-const projects = [
-  { projectName: 'Fitts_Law', projectLink: 'https://github.com/jnncode/Fitts_Law' },
-  { projectName: 'Qlick', projectLink: 'https://github.com/jnncode/Qlick' }
-];
-
 const EnterInput = () => {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState([]);
@@ -15,7 +10,6 @@ const EnterInput = () => {
       description: "List Commands",
       action: () => {
         setOutput([
-          "projects",
           "resume",
           "linkedin",
           "github",
@@ -24,32 +18,10 @@ const EnterInput = () => {
         ]);
       }
     },
-    projects: {
-      description: "Show Projects",
-      action: () => {
-        setOutput(projects.map((p, index) => (
-          <div key={index}>
-            <a href={p.projectLink} target="_blank" rel="noopener noreferrer">
-              {p.projectName}
-            </a>
-          </div>
-        )));
-      }
-    },
     resume: {
-      description: "Download Resume",
+      description: "Open Resume",
       action: () => {
-        setOutput([
-          <a
-            href="../assets/Resume.pdf"
-            download="J_Nguyen_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            key="resume-link"
-          >
-            Download J's Resume
-          </a>
-        ]);
+        window.open("/Portfolio/src/assets/Resume.pdf", "_blank");
       }
     },
     linkedin: {
@@ -73,7 +45,7 @@ const EnterInput = () => {
     '?': {
       description: "Secret command",
       action: () => {
-        alert("SKADOOSH!");
+        window.open("https://youtu.be/znDgBy2mHbc?si=LG1WV9CRCu5S2ofd", "_blank");
       }
     }
   };

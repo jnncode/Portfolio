@@ -35,16 +35,6 @@
   font-family: 'JetBrainsMono', Arial, Inter, system-ui, Avenir, Helvetica;
 }
 
-.output a:any-link {
-  color: #ffffff;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.output a:hover {
-  color: #A00000;
-}
-
 .footer {
   position: fixed;
   left: 0;
