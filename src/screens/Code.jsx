@@ -21,7 +21,7 @@ const EnterInput = () => {
     resume: {
       description: "Open Resume",
       action: () => {
-        window.open("/Portfolio/src/assets/Resume.pdf", "_blank");
+        window.open("/JNguyen_Resume.pdf", "_blank");
       }
     },
     linkedin: {
